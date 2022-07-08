@@ -1,0 +1,133 @@
+.footer{
+    background-color: #141414;
+    padding: 90px 0;
+    color: white;
+}
+
+.footer-copy-link{
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -62px;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background: $grey3
+    }
+    &-desc{
+         font-family: 'Libre Franklin', sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-left: 16px;
+    }
+}
+
+// categories
+
+.footer-categories{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 90px;
+    .categories-title{
+        margin-bottom: 22px;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;      
+        color: #666666;
+        position: absolute;
+        top: -36px;
+        left: 0;
+    }
+
+    &-grid{
+        display: grid;
+        max-width: 900px;
+        gap: 24px 0 ;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
+         .footer-categories-link{
+            color: $white;
+         }
+
+    }
+    .subscribe-form{
+        display: block;
+        align-items: center;
+        position: relative;
+        &-title{
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #666666;
+            margin-bottom: 20px;
+            position: absolute;
+            top: -26px;
+            left: 0;
+        }
+        .form-btns{
+            display: flex;
+            input{
+                padding: 0 24px;
+                font-size: 10px;
+                 line-height: 12px;
+                 letter-spacing: 1px;
+                 text-transform: uppercase;
+                 color: #666666;
+                 border: none;
+                 outline: none;
+             }
+             button{
+                 padding: 14px 24px;
+                 font-weight: 400;
+                 font-size: 10px;
+                 line-height: 12px;
+                 letter-spacing: 1px;
+                 text-transform: uppercase;                  
+                 color: white;
+                 background-color: black;
+                 cursor: pointer;
+             }
+        }
+
+    }
+
+
+}
+
+// footer-actions-grid
+.footer-actions-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 6fr));
+    .footer-info{
+        .information{
+
+        }
+    }
+    .footer-follow{}
+    .footer-template{}
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    margin-bottom: 22px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;      
+    color: #666666;
+}

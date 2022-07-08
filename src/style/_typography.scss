@@ -1,0 +1,23 @@
+// font-family: 'Libre Franklin', sans-serif; 400, 700
+// font-family: 'Source Serif 4', serif; 400
+// font-family: 'Tenor Sans', sans-serif; 400
+
+body {
+  //height: 100%;
+  font-size: $font-size-body;
+  font-family: 'Libre Franklin', sans-serif;
+
+  padding-top: 36px;
+  background-color: $background;
+  @media only screen and (max-width: 768px) {
+    padding-top: 36px;
+  }
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+    padding-top: 34px;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

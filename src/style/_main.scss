@@ -1,0 +1,41 @@
+@import './reset';
+
+@import './fonts';
+@import './variables';
+@import './mixins';
+@import './typography';
+
+// layout
+@import './components/header';
+@import './components/footer';
+
+// components
+@import './components/maincategory';
+@import './components/news';
+@import './components/post';
+@import './components/featured';
+
+// font-family: 'Libre Franklin', sans-serif;
+// font-family: 'Source Serif 4', serif;
+// font-family: 'Tenor Sans', sans-serif;
+button{
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container {
+    max-width: $content-width;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 $container-offset;
+     display: flex;
+     flex-direction: column;
+}
